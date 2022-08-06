@@ -1,1 +1,1 @@
-.flex{display:flex;gap:15px}
+@charset "UTF-8";.flex{display:flex;gap:13px 13px}.flex–row{flex-direction:row}.flex-col{flex-direction:column wrap}
