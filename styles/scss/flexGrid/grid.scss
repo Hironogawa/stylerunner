@@ -1,0 +1,27 @@
+$columns: 12;
+@for $i from 1 through $columns {
+  // create grid col template from 1 to 12
+  .grid-col-#{$i} {
+    grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+  }
+}
+@for $i from 1 through $columns + 1 {
+  // create col-span-x
+  .col-span-#{$i} {
+    grid-column: span #{$i} / span #{$i};
+  }
+  // create col-start-x
+  .col-start-#{$i} {
+    grid-column: grid-column-start #{$i};
+  }
+  // create col-start-x
+  .col-end-#{$i} {
+    grid-column: grid-column-end #{$i};
+  }
+}
+.col-start-auto {
+  grid-column-start: auto;
+}
+.col-start-auto {
+  grid-column-end: auto;
+}
