@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Hironogawa/stylerunner#readme",
   "files": [
+    "dist",
     "css",
     "scss",
     "stylerunner.scss",
