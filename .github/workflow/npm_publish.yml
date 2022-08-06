@@ -1,0 +1,27 @@
+name: stylerunner pack
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    env:
+      working-directory: ./package/
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      - run: npm install -g yarn
+      - name: install packages
+        run: yarn
+        working-directory: ${{env.working-directory}}
+      - name: publish
+        run: npm publish
+        working-directory: ${{env.working-directory}}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}

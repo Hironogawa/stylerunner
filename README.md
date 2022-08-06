@@ -1,2 +1,2 @@
 # stylerunner
-Quick build you UI, with this CSS Lib
+Quick build you UI with this CSS Lib
