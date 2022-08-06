@@ -1,5 +1,5 @@
 {
-  "name": "stylerunner",
+  "name": "@hironogawa/stylerunner",
   "version": "0.0.1",
   "description": "Quick build you UI with this CSS Lib",
   "main": "./stylerunner.scss",
