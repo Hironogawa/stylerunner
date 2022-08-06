@@ -1,0 +1,28 @@
+{
+  "name": "stylerunner",
+  "version": "0.0.1",
+  "description": "Quick build you UI with this CSS Lib",
+  "main": "./stylerunner.scss",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hironogawa/stylerunner.git"
+  },
+  "keywords": [
+    "css",
+    "style"
+  ],
+  "author": "Hironogawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hironogawa/stylerunner/issues"
+  },
+  "homepage": "https://github.com/Hironogawa/stylerunner#readme",
+  "files": [
+    "css",
+    "scss",
+    "stylerunner.scss",
+    "LICENSE",
+    "README.md"
+  ]
+}
