@@ -1,16 +1,11 @@
 {
   "name": "stylerunner",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Quick build you UI with this CSS Lib",
-  "main": "./css/stylerunner.css",
   "files": [
-    "dist/**",
-    "css",
-    "scss",
-    "stylerunner.scss",
-    "LICENSE",
-    "README.md"
+    "dist/**"
   ],
+  "main": "dist/stylerunner.css",
   "scripts": {},
   "repository": {
     "type": "git",
