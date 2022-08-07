@@ -1,10 +1,16 @@
-$columns: 12;
+$columns: 12 !default;
+$colGap: 12px !default;
+$rowGap: 12px !default;
 @for $i from 1 through $columns {
   // create grid col template from 1 to 12
   .grid-col-#{$i} {
+    display: grid;
+    column-gap: $colGap;
     grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
   }
   .grid-row-#{$i} {
+    display: grid;
+    row-gap: $rowGap;
     grid-template-rows: repeat(#{$i}, minmax(0, 1fr));
   }
 }
