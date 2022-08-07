@@ -4,6 +4,15 @@ $columns: 12;
   .grid-col-#{$i} {
     grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
   }
+  .grid-row-#{$i} {
+    grid-template-rows: repeat(#{$i}, minmax(0, 1fr));
+  }
+}
+.grid-col-auto {
+  grid-template-columns: auto;
+}
+.grid-row-auto {
+  grid-template-rows: auto;
 }
 @for $i from 0 through $columns {
   // create col-span-x
