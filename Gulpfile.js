@@ -8,18 +8,18 @@ compileSass.compiler = require("sass");
 
 const bundle = () => {
   return (
-    src("./styles/scss/**/*.scss")
+    src("./dist/scss/**/*.scss")
       //.pipe(sourceMaps.init())
       .pipe(compileSass().on("error", compileSass.logError))
       .pipe(minify())
       //.pipe(sourceMaps.write())
       //.pipe(concat("global.css"))
-      .pipe(dest("./package/dist/css/"))
+      .pipe(dest("./dist/css/"))
   );
 };
 
 const dev = () => {
-  watch("./styles/scss/**/*.scss", bundle);
+  watch("./dist/scss/**/*.scss", bundle);
 };
 
 exports.bundle = bundle;

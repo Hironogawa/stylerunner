@@ -1,6 +1,6 @@
 {
   "name": "stylerunner",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Quick build you UI with this CSS Lib",
   "files": [
     "dist/**"

@@ -5,7 +5,7 @@ $columns: 12;
     grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
   }
 }
-@for $i from 1 through $columns + 1 {
+@for $i from 0 through $columns {
   // create col-span-x
   .col-span-#{$i} {
     grid-column: span #{$i} / span #{$i};
