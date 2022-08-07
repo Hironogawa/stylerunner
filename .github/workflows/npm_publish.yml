@@ -9,7 +9,7 @@ jobs:
   publish-npm:
     runs-on: ubuntu-latest
     env:
-      working-directory: ./package/
+      working-directory: ./dist/
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -17,7 +17,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm install -g yarn
-      - name: install packages
+      - name: install dist
         run: yarn
         working-directory: ${{env.working-directory}}
       - name: publish
